@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2 | CSS Layout Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__content">
+      <a class="logo" href="#home">LAYOUT<span>02</span></a>
+      <nav class="menu">README.md
+        <a href="#composition">Composition</a>
+        <a href="#components">Components</a>
+        <a href="#articles">Articles</a>
+      </nav>
+      <a class="topbar__link" href="#about">About task ↗</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="intro">
+      <div class="wrap intro__grid">
+        <div class="intro__copy">
+          <p class="label">Advanced CSS · Assignment 02</p>
+          <h1>Build structure.<br><em>Keep flexibility.</em></h1>
+          <p class="intro__text">A new visual study of CSS Grid and Flexbox. The page contains a geometric composition, a practical component library, and three views of the same article data.</p>
+          <a class="button button--dark" href="#composition">Start exploring <span>↓</span></a>
+        </div>
+        <div class="intro__poster" aria-label="Decorative geometric poster">
+          <div class="poster__circle"></div>
+          <div class="poster__line"></div>
+          <div class="poster__block poster__block--one"></div>
+          <div class="poster__block poster__block--two"></div>
+          <div class="poster__block poster__block--three"></div>
+          <div class="poster__number">02</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="composition">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="label">01 / CSS Grid</p><h2>Geometric<br><span>composition</span></h2></div>
+          <p class="section-heading__note">A six by six grid creates a balanced composition. Each colored area is positioned by grid lines, so the illustration scales with the viewport.</p>
+        </div>
+        <div class="composition composition--new">
+          <div class="tile tile--navy"></div>
+          <div class="tile tile--cream"></div>
+          <div class="tile tile--orange"></div>
+          <div class="tile tile--pink"></div>
+          <div class="tile tile--black"></div>
+          <div class="tile tile--green"></div>
+        </div>
+        <div class="caption-row"><span>Grid system / 6 × 6</span><span>Responsive artwork</span></div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="components">
+      <div class="wrap">
+        <div class="section-heading section-heading--compact">
+          <div><p class="label">02 / Flexbox</p><h2>Component<br><span>library</span></h2></div>
+          <p class="section-heading__note">Reusable interface pieces arranged with Flexbox. Content can grow, shrink, and wrap without fixed layout dimensions.</p>
+        </div>
+
+        <div class="component-stack">
+          <article class="sample sample--navigation">
+            <div class="sample__title"><span>A</span><h3>Navigation</h3></div>
+            <div class="sample__body nav-demo"><a class="nav-demo__brand" href="#home">north / studio</a><div class="nav-demo__links"><a href="#composition">Projects</a><a href="#components">Services</a><a href="#about">Contact</a></div><div class="nav-demo__buttons"><button class="small-button small-button--light">Log in</button><button class="small-button small-button--orange">Join us</button></div></div>
+          </article>
+
+          <article class="sample">
+            <div class="sample__title"><span>B</span><h3>Cards</h3></div>
+            <div class="sample__body card-demo"><div class="info-card"><b>01</b><h4>Structure</h4><p>Arrange content on two dimensions.</p></div><div class="info-card"><b>02</b><h4>Alignment</h4><p>Keep items balanced on one axis.</p></div><div class="info-card"><b>03</b><h4>Adaptation</h4><p>Let the layout respond naturally.</p></div></div>
+          </article>
+
+          <article class="sample">
+            <div class="sample__title"><span>C</span><h3>Pagination</h3></div>
+            <div class="sample__body pagination-demo"><button class="round-button">←</button><div class="page-window"><span class="page-window__active">01</span><span>02</span><span>03</span><span>04</span></div><button class="round-button round-button--dark">→</button></div>
+          </article>
+
+          <article class="sample">
+            <div class="sample__title"><span>D</span><h3>Accordion</h3></div>
+            <div class="sample__body accordion-demo"><div class="accordion-line"><strong>What is CSS Grid?</strong><span>+</span></div><p>Grid is designed for layouts that require columns and rows at the same time.</p><div class="accordion-line"><strong>What is Flexbox?</strong><span>+</span></div><div class="accordion-line"><strong>Why use responsive rules?</strong><span>+</span></div></div>
+          </article>
+
+          <article class="sample">
+            <div class="sample__title"><span>E</span><h3>Pricing</h3></div>
+            <div class="sample__body pricing-demo"><div class="plan"><small>Basic</small><strong>Free</strong><span>For experiments</span></div><div class="plan plan--featured"><small>Studio</small><strong>$24</strong><span>For serious projects</span><button class="small-button small-button--dark">Choose plan</button></div><div class="plan"><small>Team</small><strong>$49</strong><span>For growing teams</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="articles">
+      <div class="wrap">
+        <div class="section-heading section-heading--compact"><div><p class="label">03 / One markup</p><h2>Three editorial<br><span>views</span></h2></div><p class="section-heading__note">The article content stays identical. Only the layout class changes between a grid, a list, and a magazine arrangement.</p></div>
+        <div class="view-switcher"><button class="view-switcher__button is-active" data-view="grid">Grid</button><button class="view-switcher__button" data-view="list">List</button><button class="view-switcher__button" data-view="magazine">Magazine</button></div>
+        <div class="articles articles--grid" id="articles-list">
+          <article class="article-card"><div class="article-card__image image--one"><span>01</span></div><div class="article-card__content"><p class="article-card__tag">Layout theory</p><h3>Designing with a visual rhythm</h3><p>Good spacing creates a quiet rhythm that guides the reader through a page.</p><div class="article-card__meta"><span>6 min read</span><span>→</span></div></div></article>
+          <article class="article-card"><div class="article-card__image image--two"><span>02</span></div><div class="article-card__content"><p class="article-card__tag">Flexbox</p><h3>One direction, many possibilities</h3><p>Flexbox helps a group of related elements share available space gracefully.</p><div class="article-card__meta"><span>4 min read</span><span>→</span></div></div></article>
+          <article class="article-card"><div class="article-card__image image--three"><span>03</span></div><div class="article-card__content"><p class="article-card__tag">Responsive CSS</p><h3>Let the screen shape the layout</h3><p>Fluid sizing and wrapping make the same content useful on every device.</p><div class="article-card__meta"><span>7 min read</span><span>→</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about"><div class="wrap about__inner"><div><p class="label">Submission notes</p><h2>Made with Grid<br>and Flexbox.</h2></div><div><p>Student: Your Name<br>Group: Your Group</p><p>Add your GitHub repository link before submitting the report.</p></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><span>Assignment 02 / Advanced CSS</span><span>HTML · CSS · Responsive design</span></div></footer>
+  <script src="new-script.js"></script>
+</body>
+</html>
